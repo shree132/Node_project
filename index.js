@@ -15,7 +15,11 @@ app.get("/About", (req, resp) => {
         ' <h1>welcome to about page</h1> <a href="/">Go to home page</a>'
     );
 })
-
+app.get("/Login", (req, resp) => {
+    resp.send(
+        ' <h1>welcome to Login page</h1> <a href="/">Go to home page</a>'
+    );
+})
 app.listen(port, () => {
     console.log('Listening at ${port}')
 })
